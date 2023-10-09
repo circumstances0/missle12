@@ -1,0 +1,1137 @@
+P1.Q1 - Apply following CSS properties to all P elements on the click of the button.
+a.	Font Size – 20
+b.	Align – center
+c.	Text Color – red
+Background Color – black
+---------------------------------------------------------------------------------------------------------
+<script src="jquery-min.js"></script>
+<script>
+    $(document).ready(function () {
+        $("#btn1").click(function () {
+            $("p").css({
+                "font-size": "20px",
+                "background-color": "gray",
+                "color": "yellow",
+                "align-item": "center"
+            });
+        });
+    });
+
+
+    $(document).ready(function () {
+        $("#btn2").click(function () {
+            $("p").css({
+                "font-size": "30px",
+                "background-color": "lavender",
+                "color": "blue",
+                "align-item": "center"
+            });
+        });
+    });
+
+
+
+</script>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+
+    h1{
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+
+
+    p {
+        font-size: 20px;
+        background-color: black;
+        color: rgb(181, 215, 108);
+        align-items: center;
+    }
+
+
+    #btn1 {
+        margin: 0 79px;
+        padding: 0 20px;
+        width: 15vh;
+        height: 8vh;
+        border-radius: 11vh;
+        color: lavender;
+        background: rgb(0, 0, 33);
+    }
+
+
+    #btn2{
+    margin: 0 79px;
+    padding: 0 20px;
+    width: 15vh;
+    height: 8vh;
+    border-radius: 11vh;
+    color: lavender;
+    background: red;
+    }
+</style>
+
+
+<body>
+    <h1>
+        Sahil Shah
+    </h1>
+
+
+    <p>
+        Vidyalankar school of information technology
+    </p>
+
+
+    <p>
+        Wadala East
+    </p>
+
+
+
+    <button id="btn1">Change</button>
+    <button id="btn2">Change</button>
+
+
+</body>
+
+Write a jQuery code to hide and show all elements belonging to class “c1”.
+<script src="jquery-min.js"></script>
+<script>
+    $(document).ready(function () {
+        $("#btn1").click(function () {
+            $("p").hide(200);
+        });
+    });
+
+
+    $(document).ready(function () {
+        $("#btn2").click(function () {
+            $("p").show(200);
+        });
+    });
+
+
+
+</script>
+
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+
+    h1{
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+
+
+    p {
+        font-size: 20px;
+        background-color: black;
+        color: rgb(181, 215, 108);
+        align-items: center;
+    }
+
+
+    #btn1 {
+        margin: 0 79px;
+        padding: 0 20px;
+        width: 15vh;
+        height: 8vh;
+        border-radius: 11vh;
+        color: lavender;
+        background: rgb(0, 0, 33);
+    }
+
+
+    #btn2{
+    margin: 0 79px;
+    padding: 0 20px;
+    width: 15vh;
+    height: 8vh;
+    border-radius: 11vh;
+    color: lavender;
+    background: red;
+    }
+</style>
+
+
+<body>
+    <h1>
+        Sahil Shah
+    </h1>
+
+
+    <p>
+        Vidyalankar school of information technology
+    </p>
+
+
+    <p>
+        Wadala
+    </p>
+
+
+
+    <button id="btn1">HIDE</button>
+    <button id="btn2">show</button>
+
+
+</body>
+------------------------------------------------------------------------------------------------------------------------------
+Write a jQuery code to apply all fading and sliding effects on the element having id “t1”. 
+------------------------------------------------------------------------------------------------------------------------------
+<script src="jquery-min.js"></script>
+<script>
+    $(document).ready(function () {
+        $("#btn1").click(function () {
+            $("p").hide(200);
+        });
+    });
+
+
+    $(document).ready(function () {
+        $("#btn2").click(function () {
+            $("p").show(200);
+        });
+
+
+        $("#btn3").click(function () {
+            $("p").toggle(200);
+        });
+
+
+        $("#btn4").click(function () {
+            $("p").fadeOut(200);
+        });
+
+
+        $("#btn5").click(function () {
+            $("p").fadeIn(200);
+        });
+
+
+        $("#btn6").click(function () {
+            $("p").fadeTo(200,0.5);
+        });
+
+
+        $("#btn7").click(function () {
+            $("p").slideUp(200);
+        });
+
+
+        $("#btn8").click(function () {
+            $("p").slideDown(200);
+        });
+
+
+        $("#btn9").click(function () {
+            $("p").slideToggle(200);
+        });
+    });
+
+
+
+</script>
+
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+
+    h1{
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+
+
+    p {
+        font-size: 20px;
+        background-color: black;
+        color: rgb(255, 255, 255);
+        align-items: center;
+    }
+
+
+
+    #btn1 {
+        margin: 0 79px;
+        padding: 0 20px;
+        width: 15vh;
+        height: 8vh;
+        border-radius: 11vh;
+        color: lavender;
+        background: rgb(0, 0, 33);
+    }
+
+
+    #btn2{
+    margin: 0 79px;
+    padding: 0 20px;
+    width: 15vh;
+    height: 8vh;
+    border-radius: 11vh;
+    color: lavender;
+    background: red;
+    }
+
+
+    #btn3 {
+        margin: 0 79px;
+        padding: 0 20px;
+        width: 15vh;
+        height: 8vh;
+        border-radius: 11vh;
+        color: lavender;
+        background: rgb(0, 0, 33);
+    }
+
+
+    #btn4{
+    margin: 0 79px;
+    padding: 0 20px;
+    width: 15vh;
+    height: 8vh;
+    border-radius: 11vh;
+    color: lavender;
+    background: red;
+    }
+
+
+    #btn5 {
+        margin: 0 79px;
+        padding: 0 20px;
+        width: 15vh;
+        height: 8vh;
+        border-radius: 11vh;
+        color: lavender;
+        background: rgb(0, 0, 33);
+    }
+
+
+    #btn6{
+    margin: 0 79px;
+    padding: 0 20px;
+    width: 15vh;
+    height: 8vh;
+    border-radius: 11vh;
+    color: lavender;
+    background: red;
+    }
+
+
+    #btn7 {
+        margin: 0 79px;
+        padding: 0 20px;
+        width: 15vh;
+        height: 8vh;
+        border-radius: 11vh;
+        color: lavender;
+        background: rgb(0, 0, 33);
+    }
+
+
+    #btn8{
+    margin: 0 79px;
+    padding: 0 20px;
+    width: 15vh;
+    height: 8vh;
+    border-radius: 11vh;
+    color: lavender;
+    background: red;
+    }
+
+
+
+    #btn9 {
+        margin: 0 79px;
+        padding: 0 20px;
+        width: 15vh;
+        height: 8vh;
+        border-radius: 11vh;
+        color: lavender;
+        background: rgb(0, 0, 33);
+    }
+
+
+   
+
+
+    
+</style>
+
+
+<body>
+    <h1>
+        Sahil Shah
+    </h1>
+
+
+    <p>
+        Vidyalankar school of information technology
+    </p>
+
+
+    <p>
+        Wadala
+    </p>
+
+
+
+    <button id="btn1">HIDE</button>
+    <button id="btn2">show</button>
+    <button id="btn3">toggle</button>
+    <button id="btn4">fadeout</button>
+    <button id="btn5">fadein</button>
+    <button id="btn6">fadeto</button>
+    <button id="btn7">slideup</button>
+    <button id="btn8">slidedown</button>
+    <button id="btn9">slidetoggle</button>
+
+
+</body>
+------------------------------------------------------------------------------------------------------------------------------
+Write a jQuery code to move the first division element to the right side by 200px also set the color red and font size 30px of the division content. After applying all CSS properties display a message “All CSS effects applied”.
+Implement the code on the click of the button.
+------------------------------------------------------------------------------------------------------------------------------
+
+<html>
+  <head>
+      <title> Practical 2</title>
+      <script src="jquery-min.js"></script>
+      <script>
+          $(document).ready(function()
+          {
+              $("#b1").click(function()
+              { $("p").eq(1).css({"background-color":"blue","color":"yellow","text-align":"center"}).fadeTo(3000,0.3).slideUp(2000);
+           });
+       });
+      </script>
+  </head>
+  <body>
+
+
+  <div>
+
+
+      <h1> Created By</h1>
+
+
+      <p> Sahil Shah</p>
+
+
+  </div>
+
+
+  <div>
+
+
+
+
+
+      <p>VSIT</p>
+
+
+
+
+
+  </div>
+
+
+
+
+
+      <input type="button" value="Chaining" id="b1"/>
+
+
+
+
+
+  </body>
+
+
+
+
+
+</html>
+------------------------------------------------------------------------------------------------------------------------------
+Implement chaining technique to apply following effects on the 2nd paragraph on the page
+a.	Add css class with following properties – color, align, underlined
+b.	fadeTo
+c.	slideup
+Apply the above effects on the click of a button.
+------------------------------------------------------------------------------------------------------------------------------
+
+<html>
+
+
+  <head>
+
+
+      <title> Practical 2</title>
+
+
+      <script src="jquery-min.js"></script>
+
+
+      <script>
+
+
+          $(document).ready(function()
+          {
+              $("#b1").click(function()
+              { $("p").eq(1).css({"background-color":"blue","color":"yellow","text-align":"center"}).fadeTo(3000,0.3).slideUp(2000);
+           });
+
+
+       });
+
+
+      </script>
+
+
+  </head>
+
+
+  <body>
+
+
+  <div>
+
+
+      <h1> Created By</h1>
+
+
+      <p> Sahil Shah</p>
+
+
+  </div>
+
+
+  <div>
+
+
+
+
+
+      <p>VSIT</p>
+
+
+
+
+
+  </div>
+
+
+
+
+
+      <input type="button" value="Chaining" id="b1"/>
+
+
+
+
+
+  </body>
+
+
+
+
+
+</html>
+------------------------------------------------------------------------------------------------------------------------------
+Implement following operations on the click of a button
+a.	Insert your name in the first textbox and display it on the page in bold
+b.	Insert your roll no in the second textbox and display it next to your name
+Remove the line which displays your name and roll no
+------------------------------------------------------------------------------------------------------------------------------
+
+<script src="jquery-min.js"></script>
+<script>
+    $(document).ready(function () {
+        $("#btn").click(function () {
+            var name = $("#Name").val();
+            var rno = $("#rno").val();
+
+
+            $("p").html("<b>" + name + "</b>");
+            $("p").append(" " + rno);
+        });
+
+
+        $("#btn1").click(function () {
+            $("p").remove();
+        });
+    });
+</script>
+
+
+<input type="text" id="Name" placeholder="Type Your Name"> <br>
+<input type="text" id="rno" placeholder="ur Enroll Number"> <br>
+
+<p>Only Slime Shady </p>
+<input type="button" id="btn" value="DISPLAY">
+<input type="button" id="btn1" value="REMOVE">
+------------------------------------------------------------------------------------------------------------------------------
+Create a JSON file and parse it.
+JSON file must contain 5 Students data with following attributes
+•	Name
+•	Roll No
+•	Address
+•	Gender
+•	Email Id
+•	Mobile No
+The output of the program must print details of all the students.
+------------------------------------------------------------------------------------------------------------------------------
+<script>
+
+
+        var data='[{"name":"sahil","rno":"22", "address":"mumbai", "gender":"male", "emailid":"sahilshah@gmail.com","mno":"90820496"},{"name":"ombabu","rno":"13","address":"mahim","gender":"male","emailid":"ombabu@gmail.com","mno":"9586413"}, {"name":"kshitij","rno":"3001","address":"lal baug","gender":"male","emailid":"kshitji@gmail.com","mno":"95684725"}]';
+
+
+var arr=JSON.parse(data);
+for(var a in arr)
+{
+document.write("name:"+arr[a].name+"<br/>");
+document.write("Roll No:"+arr[a].rno+"<br/>");
+document.write("address:"+arr[a].address+"<br/>");
+document.write("gender:"+arr[a].gender+"<br/>");
+document.write("emailid:"+arr[a].emailid+"<br/>");
+document.write("mno:"+arr[a].mno+"<br/>");
+document.write("<hr/><br/>");
+}
+</script>
+Parse IT
+<head>
+    <script src="data.json"></script>
+</head>
+<body>
+    <script>
+
+
+var arr=JSON.parse(data);
+for(var a in arr)
+{
+document.write("name:"+arr[a].name+"<br/>");
+document.write("Roll No:"+arr[a].rno+"<br/>");
+document.write("address:"+arr[a].address+"<br/>");
+document.write("gender:"+arr[a].gender+"<br/>");
+document.write("emailid:"+arr[a].emailid+"<br/>");
+document.write("mno:"+arr[a].mno+"<br/>");
+document.write("<hr/><br/>");
+}
+</script>
+
+
+</body>
+
+data.JSON
+
+var data='[{"name":"sahil","rno":"22", "address":"mumbai", "gender":"male", "emailid":"sahilshah@gmail.com","mno":"90820496"},{"name":"ombabu","rno":"13","address":"mahim","gender":"male","emailid":"ombabu@gmail.com","mno":"9586413"}, {"name":"kshitij","rno":"3001","address":"lal baug","gender":"male","emailid":"kshitji@gmail.com","mno":"95684725"}]';
+
+------------------------------------------------------------------------------------------------------------------------------
+Create a JSON file and persist it in any database.
+Store the JSON created in the above question in the collection student under college database.
+------------------------------------------------------------------------------------------------------------------------------
+
+{"name":"sahil","rno":"22","address":"mumbai","gender":"male","emailid":"sahilshah@gmail.com","mno":"90820496"}
+{"name":"ombabu","rno":"13","address":"mahim","gender":"male","emailid":"ombabu@gmail.com","mno":"9586413"}
+{"name":"kshitij","rno":"3001","address":"lal baug","gender":"male","emailid":"kshitji@gmail.com","mno":"95684725"}
+------------------------------------------------------------------------------------------------------------------------------
+Implement following operations on the click of a button
+a.	Insert your name in the first textbox and display it on the page in bold
+b.	Insert your roll no in the second textbox and display it next to your name
+Remove the line which displays your name and roll no
+
+•	Create a database of your name
+•	Create a “Student” collection
+•	Insert at least 3 documents having following keys
+o	roll_no
+o	name
+o	gender
+o	age
+o	email_id
+•	Display all records.
+•	Update an email id of a student having “roll_no = 2” to “student2@gmail.com” 
+•	Delete record of a student having “roll_no = 1”.
+•	Drop the collection “Student”
+•	Drop the created database
+--------------------------------------------------------------------------------------------------------------------------
+Start mongo
+Create database
+db.student.insert({"roll_no":"58","name":"sahil","gender":"male","age":"18","email_id":"sahil@gmail.com"})
+  
+ > db.student.insert({"roll_no":"60","name":"tanju","gender":"male","age":"20","email_id":"tanju@gmail.com"})
+  
+ > db.student.insert({"roll_no":"01","name":"sushansu","gender":"male","age":"22","email_id":"sudhandu@gmail.com"})
+db.student.find().pretty()
+
+·	Update an email id of a student having “roll_no = 2” to “student2@gmail.com”
+
+db.student.update({"Roll_no":"60"},{$set:{"Email_id":"student2@gmail.com"}})
+
+·	Delete record of a student having “roll_no = 1”.
+Code
+delete({"Roll_no":"10"})
+
+·	Drop the collection “Student”
+
+Code
+db.student.drop()
+·	Drop the created database
+Code
+db.drop.sahil
+
+------------------------------------------------------------------------------------------------------------------------------
+Create a Collection Employee with the following Fields
+(Eid,Ename,Sal,City,Hobbies) where hobbies is an array perform the Following Queries based on the collection.
+•	Insert at least five records
+•	Display first 3 employee’s data
+•	Update salary of all employees to 50000 who belongs to Mumbai City
+•	Update hobbies to “drawing” and “acting” of employee id “2” 
+•	Return number of employees who belongs to Pune City
+---------------------------------------------------------------------------------------------------------------------------
+
+db.emp.insertMany([{"Eid":"01","Ename":"emp1","Sal":"1000","City":"Mumbai","Hobbies":["Reading","Singing"]},{"Eid":"02","Ename":"emp2","Sal":"2000","City":"Mumbai","Hobbies":["Dancing","Running"]},{"Eid":"03","Ename":"emp3","Sal":"3000","City":"Nagpur","Hobbies":["Singing","Baseball"]},{"Eid":"04","Ename":"emp4","Sal":"4000","City":"Pune","Hobbies":["Football","Boxing"]},{"Eid":"05","Ename":"emp5","Sal":"5000","City":"Pune","Hobbies":["Studying","Trading"]}])
+
+·	Display first 3 employee’s data
+Code
+db.emp.find().limit(3)
+·	Update salary of all employees to 50000 who belongs to Mumbai City
+Code
+db.emp.updateMany({"City":"Mumbai"},{$set:{"Sal":"50000"}})
+·	Update hobbies to “drawing” and “acting” of employee id “2” 
+Code
+db.emp.update({"Eid":"02"},{$set:{"Hobbies":["Drawing","Acting"]}})
+·	Return number of employees who belongs to Pune City
+Code
+db.emp.find({"City":"Pune"}).count()
+------------------------------------------------------------------------------------------------------------------------------
+Import data from restaurant.json file to restaurant collection under mydb database
+------------------------------------------------------------------------------------------------------------------------------
+Perform the following operations on the Restaurant data
+1.	Write a MongoDB query to display all the documents in the collection restaurants.
+2.	Write a MongoDB query to display the fields restaurant_id, name, borough and zip code, 
+but exclude the field _id for all the documents in the collection restaurant.
+3.	Write a MongoDB query to display the first 5 restaurant which is in the borough Bronx.
+4.	Write a MongoDB query to find the restaurants that achieved a score, more than 80 but less than 100
+5.	Write a MongoDB query to find the restaurants which locate in latitude value less than -95.754168
+6.	Write a MongoDB query to find the restaurants which do not prepare any cuisine of 'American'
+ and achieved a score more than 70 and located in the longitude less than -65.754168.
+7.	Write a MongoDB query to find the restaurants which do not prepare any cuisine of 'American ' 
+and achieved a grade point 'A' not belongs to the borough Brooklyn. The document must be displayed according to the cuisine in descending order.
+8.	Write a MongoDB query to find the restaurant Id, name, borough and cuisine for those restaurants which contain 'ces' as last three letters for its name.
+9.	Write a MongoDB query to find the restaurant Id, name, borough and cuisine for those restaurants which contain 'Wil' as first three letters for its name
+10.	Write a MongoDB query to find the restaurant Id, name, borough and cuisine for those restaurants  which contain 'Reg' as three letters somewhere in its name
+11.	Write a MongoDB query to find the restaurants which belong to the borough Bronx and prepared either American or Chinese dish.
+12.	Write a MongoDB query to find the restaurant Id, name, borough and cuisine for those restaurants which belong to the borough Staten Island or Queens or Bronx or Brooklyn   
+13.	Write a MongoDB query to arranged the name of the cuisine in ascending order and for that same cuisine borough should be in descending order
+14.	Write a MongoDB query to display all the addresses that contains the street.
+15.	Write a MongoDB query which will select all documents in the restaurants collection where the coord field value is Double
+16.	Write a MongoDB query which will select the restaurant Id, name and grades for those restaurants which returns 0 as a remainder after dividing the score by 7.
+17.	Write a MongoDB query to find the restaurant Id, name, and grades for those restaurants which achieved a grade of "A" and scored 11 on an ISODate "2014- 08-11T00:00:00Z" among many of survey dates.
+Write a MongoDB query to find the restaurant Id, name, address and geographical location for those restaurants where 2nd element of coord array contains a value which is more than 42 and upto 52.
+------------------------------------------------------------------------------------------------------------------------------
+mongoimport --db mydb --collection restaurant --file "D:\NGTpract\restaurants.json"
+1.db.restaurant.find().pretty() 
+2.db.restaurant.find({},{restaurant_id:1,name:1, borough:1, "address.zipcode":1,_id:0}).pretty() 
+3.db.restaurant.find({borough: "Bronx"}).limit(5).pretty() 
+4. db.restaurant.find({"grades.score":{ $gt:80, $lt:100 }}).pretty() 
+5. db.restaurant.find({"address.coord":{$lt:-95.754168}}).pretty() 
+6. db.restaurant.find({"cuisine":{$ne:"American "},"grades.score":{$gt:70},"address.coord":{$lt:-65.754168}}).pretty() 
+7. db.restaurant.find({"cuisine":{$ne:"American "},"grades.grade":"A","borough":{$ne:"Brooklyn"}}).sort({"cuisine":-1}).pretty() 
+8. db.restaurant.find({"name":{$regex:/ces$/i}},{restaurant_id:1,name:1, borough:1, "cuisine":1,_id:0}).pretty() 
+9. db.restaurant.find({"name":{$regex:/^Wil/i}},{restaurant_id:1,name:1, borough:1, "cuisine":1,_id:0}).pretty() 
+10. db.restaurant.find({"name":{$regex:/.*Reg*./i}},{restaurant_id:1,name:1, borough:1, "cuisine":1,_id:0}).pretty()
+11.a) db.restaurant.find({"borough":"Bronx",$or:[{cuisine:"American "},{cuisine:"Chinese"}]}).pretty()
+11.b) db.restaurants.find({"borough":"Bronx","cuisine":{$in:["American ","Chinese"]}}).pretty()
+12 db.restaurant.find({"borough":{$in:["Staten Island","Queens","Bronx","Brooklyn"]}},{restaurant_id:1,name:1, borough:1,cuisine:1, _id:0}).pretty()
+13. db.restaurant.find().sort({"cuisine":1,"borough":-1}).pretty()
+14. db.restaurant.find({"address.street":{$exists:true}}).pretty()
+15. db.restaurants.find({"address.coord":{$type:1}}).pretty()
+16. db.restaurants.find({"grades.score":{$mod:[7,0]}},{restaurants_id:1,name:1,grades:1,_id:0}).pretty()
+17.  db.restaurant.find({"grades.grade":"A","grades.score":11,"grades.date":ISODate("2014-08-11T00:00:00Z")},{"restaurant_id":1,"name":1,"grades":1}).pretty()
+18 db.restaurant.find({"address.coord.1":{$gt:42,$lte:52}},{"restaurant_id":1,"name":1,"address":1,"address.coord":1,_id:0}).pretty()
+------------------------------------------------------------------------------------------------------------------------------
+Create a Collection Employee with the following Fields (Eid, Ename, Sal, City, hobbies) where hobbies are an array perform the Following Queries based on the collection. 
+------------------------------------------------------------------------------------------------------------------------------
+ 
+------------------------------------------------------------------------------------------------------------------------------
+A. Write a MongoDB query to use sum, avg, min and max expression. 
+•	db.Employee.aggregate({$group:{_id:"$city","sum_sal":{$sum:"$sal"}}})
+•	db.Employee.aggregate({$group:{_id:"$city","avg_sal":{$avg:"$sal"}}})
+•	db.Employee.aggregate({$group:{_id:"$city","min_sal":{$min:"$sal"}}})
+•	db.Employee.aggregate({$group:{_id:"$city","max_sal":{$max:"$sal"}}})
+
+ 
+------------------------------------------------------------------------------------------------------------------------------
+B. Write a MongoDB query to use push and addToSet expression. 
+------------------------------------------------------------------------------------------------------------------------------
+-> db.Employee.aggregate({$group:{_id:"$city","push_sal":{$push:"$sal"}}})
+ 
+-> db.Employee.aggregate({$group:{_id:"$city","sum_sal":{$addToSet:"$sal"}}})
+ 
+------------------------------------------------------------------------------------------------------------------------------
+C. Write a MongoDB query to use first and last expression. 
+------------------------------------------------------------------------------------------------------------------------------
+-> db.Employee.aggregate({$group:{_id:"$city","sum_sal":{$first:"$sal"}}})
+ 
+-> db.Employee.aggregate({$group:{_id:"$city","sum_sal":{$last:"$sal"}}})
+ 
+------------------------------------------------------------------------------------------------------------------------------
+a Write a MongoDB query to create Replica of existing database
+------------------------------------------------------------------------------------------------------------------------------
+-- start mongod -replSet mydata -logpath \data\rs1\1.log --dbpath \data\rs1 --port 27012
+-- start mongod -replSet mydata -logpath \data\rs2\2.log --dbpath \data\rs2 --port 27019
+-- start mongod -replSet mydata -logpath \data\rs3\3.log --dbpath \data\rs3 --port 27020
+mongo –port 27018
+config={_id:"mydata",members:[{_id:0,host:"localhost:27018"},{_id:1,host:"localhost:27019"},{_id:2,host:"localhost:27020"}]}
+rs.initiate(config)
+rs.status()
+show dbs
+Use mydb
+db.employee.insert({name : “sahil” , add: “Mumbai”})
+db.employee.find().pretty()
+------------------------------------------------------------------------------------------------------------------------------
+2.Terminal
+Mongo –port 27019
+rs.slaveOk()
+show dbs
+------------------------------------------------------------------------------------------------------------------------------
+3.Terminul
+mongo –port 27020
+------------------------------------------------------------------------------------------------------------------------------
+b Write a MongoDB query to create a backup of existing database.
+------------------------------------------------------------------------------------------------------------------------------
+mongod to start mongo
+mongo
+Show dbs
+Use employee
+db.employee.insert({name : “sahil” , add: “Mumbai”})
+db.employee.find().pretty()
+mongoexport --db employee --collection employee -o D:\mydataa.json
+------------------------------------------------------------------------------------------------------------------------------
+c Write a MongoDB query to restore database from the backup.
+------------------------------------------------------------------------------------------------------------------------------
+mongoimport --db pract8 --collection sahilss --file D:\mydataa.json
+Show dbs
+Use pract8
+Show collections
+db.sahilss.find().pretty()
+------------------------------------------------------------------------------------------------------------------------------
+Java and mongo
+------------------------------------------------------------------------------------------------------------------------------
+Connecting Java with MongoDB and inserting, retrieving, updating and deleting
+------------------------------------------------------------------------------------------------------------------------------
+///INSERTING///
+
+Java mongo Insert:
+package javaapplication1;
+ 
+ 
+import com.mongodb.MongoClient;
+import com.mongodb.client.MongoCollection;
+import com.mongodb.client.MongoDatabase;
+import org.bson.Document;
+ 
+ 
+ 
+ 
+public class JavaApplication1 {
+    public static void main(String[] args) {
+        MongoClient mongo=new MongoClient("localhost",27017);
+        System.out.println("Connect to the server successfully");
+        
+        MongoDatabase database=mongo.getDatabase("mydb1254");
+        
+        MongoCollection<Document>collection=database.getCollection("sampleCollection");
+        
+        System.out.println("Collection sampleCollection selected successfully");
+        
+        Document document=new Document("id",22);
+        document.append("name","Sahil Shah");
+        document.append("gender","M");
+        collection.insertOne(document);
+        System.out.println("Document inserted successfully");
+    }
+    
+}
+Java Update:
+/**UPDATE*/
+ 
+import com.mongodb.BasicDBObject;
+import com.mongodb.DBCollection;
+ 
+ 
+ 
+import com.mongodb.DB;
+import com.mongodb.DBObject;
+import com.mongodb.MongoClient;
+import com.mongodb.WriteResult;
+ 
+ 
+public class mongodb { 
+    public static void main(String[] args) {
+        MongoClient mongo=new MongoClient("localhost", 27017); 
+        DB db=mongo.getDB("mydb1254");
+        DBCollection col=db.getCollection ("sampleCollection");
+        
+        DBObject query=new BasicDBObject("id",1);
+        DBObject update=new BasicDBObject();
+        update.put("set", new BasicDBObject("name", "xyz"));
+        WriteResult result =col.update(query, update);
+        
+        
+        mongo.close();
+ 
+}
+}
+
+import com.mongodb.MongoClient;
+import com.mongodb.client.MongoCollection;
+import com.mongodb.client.MongoDatabase;
+import com.mongodb.client.model.Filters;
+import org.bson.Document;
+ 
+ 
+public class delete {
+    public static void main(String[] args){
+        
+        MongoClient mongo=new MongoClient("localhost",27017);
+            System.out.println("Connect to the server successfully");
+        
+        MongoDatabase database=mongo.getDatabase("mydb1254");
+        
+        MongoCollection<Document>collection=database.getCollection("sampleCollection");
+        
+        collection.deleteOne(Filters.eq("id",1));
+        System.out.println("Document Deleted successfully");
+    }
+}
+///retrieving///
+import com.mongodb.MongoClient;
+ import com.mongodb.client.FindIterable;
+import com.mongodb.client.MongoCollection;
+import com.mongodb.client.MongoDatabase;
+ import java.util.Iterator;
+import org.bson. Document;
+ public class show {
+ public static void main (String[] args) {
+ 
+MongoClient mongo=new MongoClient("localhost",27017);
+ System.out.println ("Connect to the server successfully");
+ MongoDatabase database=mongo.getDatabase("mydb");
+ MongoCollection<Document> collection=database.getCollection("sampleCollections");
+FindIterable<Document> iterDoc=collection.find();
+Iterator it=iterDoc.iterator();
+ while(it.hasNext()){
+     System.out.println(it.next()); 
+}}}
+Use mydb
+Show dbs
+Show collections
+Db.sampleCollections
+
+------------------------------------------------------------------------------------------------------------------------------
+PHP mongo
+------------------------------------------------------------------------------------------------------------------------------
+Connecting PHP with MongoDB and Inserting, deleting, retrieving and updating
+------------------------------------------------------------------------------------------------------------------------------
+ 
+Code of Insert
+<?php
+   // connect to mongodb
+ 
+   $m = new MongoDB\Driver\Manager("mongodb://localhost:27017"); //contention  
+   echo "Connection to database successfully";  //print output
+   
+ 
+$bulk = new MongoDB\Driver\BulkWrite; //write to many document
+ 
+$document1 = ['title' => 'one'];  
+$document2 = ['id' => '01', 'title' => 'two'];
+$document3 = ['id' => '02', 'title' => 'three'];
+ 
+$id1 = $bulk->insert($document1);
+$id2 = $bulk->insert($document2);
+$id3 = $bulk->insert($document3);
+$result = $m->executeBulkWrite('mydd5.data', $bulk);
+   echo "Document inserted successfully";
+?>
+
+Localhost/insert.php
+show dbs
+use mydd5
+show collections
+db.data.find().pretty()
+
+Code of select or retrieving
+ 
+<?php
+$m = new MongoDB\Driver\Manager("mongodb://localhost:27017");
+echo "Connection to database successfully";
+ 
+$query = new MongoDB\Driver\Query([], []);
+$cursor = $m->executeQuery('mydd5.data', $query);
+ 
+foreach ($cursor as $document)
+{
+    if (property_exists($document, 'id')) {
+        echo $document->id;
+        echo "<br/>";
+    } else {
+        echo "ID not found for this document.<br/>";
+    }
+ 
+    if (property_exists($document, 'title')) {
+        echo $document->title;
+        echo "<br/>";
+    } else {
+        echo "Title not found for this document.<br/>";
+    }
+}
+?>
+Code of update
+ 
+<?php
+   // connect to mongodb
+ 
+   $m = new MongoDB\Driver\Manager("mongodb://localhost:27017"); //contention  
+   echo "Connection to database successfully";  //print output
+    
+ 
+$bulk = new MongoDB\Driver\BulkWrite; //write to many document
+ 
+$bulk->update(
+    ['id'=>'02'],['$set'=>['title'=>'sandeep']],
+);
+
+
+
+
+$result = $m->executeBulkWrite('mydd5.data', $bulk);
+ 
+   
+   echo "Document updated successfully";
+?>
+
+db.data.find(),pretty()
+
+Code of delete
+ 
+<?php
+   // connect to mongodb
+ 
+   $m = new MongoDB\Driver\Manager("mongodb://localhost:27017"); //contention  
+   echo "Connection to database successfully";  //print output
+    
+ 
+$bulk = new MongoDB\Driver\BulkWrite; //write to many document
+ 
+$bulk->delete(
+    ['id'=>'01']
+);
+$result = $m->executeBulkWrite('mydd5.data', $bulk); 
+   echo "Document Deleted successfully";
+?>
+ ------------------------------------------------------------------------------------------------------------------------------
+Python
+------------------------------------------------------------------------------------------------------------------------------
+[A] Insert records
+------------------------------------------------------------------------------------------------------------------------------
+
+Pip install
+Cd C:\Users\admin\AppData\Local\Programs\Python\Python38\Scripts
+pip install pymongo
+CODE:
+from pymongo import MongoClient
+client = MongoClient('localhost:27017')
+db=client.EmployeeData
+def insert():
+    try:
+        employeeId=input("\n Enter Id:\n")
+        employeeName=input("\n Enter Name:\n")
+        employeeAge=input("\n Enter Age:\n")
+        employeeCountry=input("\n Enter Country:\n")
+ 
+        db.Employee.insert_one(
+            {
+                "id":employeeId,
+                "name":employeeName,
+                "age":employeeAge,
+                "Country":employeeCountry
+                }
+            )
+        print("\n Inserted data successfully\n")
+    except Exception as e:
+           print(str(e))
+ 
+insert()
+
+[B] Update records
+------------------------------------------------------------------------------------------------------------------------------
+
+from pymongo import MongoClient
+client = MongoClient('localhost:27017')
+db = client.EmployeeData
+def update():
+    try:
+        employeeName=input("\n Enter Employee name\n")
+        employeeAge=input("\n Enter a age\n")
+        employeeCountry=input("\n Enter a country\n")
+         db.Employee.update_one(
+            {
+                "name":employeeName},
+            {
+                "$set":{
+                "age":employeeAge,
+                "Country":employeeCountry
+                }
+                }
+        )
+        print("\n Records update successfully\n")
+    except Exception as e:
+             print(str(e))
+update()
+
+[C] Delete records
+------------------------------------------------------------------------------------------------------------------------------
+
+from pymongo import MongoClient
+client = MongoClient ('localhost:27017')
+db = client.EmployeeData
+def delete():
+    try:
+        name=input("\n Enter employee name to delete\n")
+        db.Employee.delete_many({"name":name})
+        print("\n Deletion successfully\n")
+    except(Exception) as e:
+        print(str(e))
+  
+delete()
+
+[D] Retrieve records
+------------------------------------------------------------------------------------------------------------------------------
+
+from pymongo import MongoClient
+client = MongoClient ('localhost:27017')
+db = client.EmployeeData
+def read():
+    try:
+        empCol = db.Employee.find()
+        print("\n All data from EmployeeData Database\n")
+        for emp in empCol:
+        print(emp)
+    except Exception as e:
+           print(str(e))
+ read() 
+#Retrieve()
